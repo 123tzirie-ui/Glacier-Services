@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Glacier Services for property management inquiries. We're here to help your community thrive.">
+    <title>Contact Us - Glacier Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-placeholder">❄️</div>
+                <span>Glacier Services</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="owner-portal.html" class="nav-cta">Owner Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="background: linear-gradient(135deg, #1e40af 0%, #0d9488 100%); padding: 60px 2rem;">
+            <div class="hero-content">
+                <h1 style="color: white;">Get in Touch</h1>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">We're here to answer your questions and discuss your community's needs</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <div class="container">
+                <div class="two-column" style="gap: 3rem;">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2>Contact Us</h2>
+                        <p>Fill out the form below and we'll get back to you within one business day.</p>
+
+                        <form id="contactForm" style="margin: 2rem 0;">
+                            <div class="form-group">
+                                <label for="contact-name">Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">-- Select a subject --</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="proposal">Request a Proposal</option>
+                                    <option value="portal">Portal Access</option>
+                                    <option value="maintenance">Maintenance Issue</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Please tell us how we can help..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="contactSuccess" style="display: none; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+                            <strong>Thank you!</strong> We've received your message. Our team will respond within one business day.
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2>Contact Information</h2>
+
+                        <div class="contact-info" style="margin-bottom: 2rem;">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-info-text">
+                                <h4>Office Address</h4>
+                                <p>
+                                    Glacier Services<br>
+                                    123 Main Street, Suite 100<br>
+                                    <!-- City, State ZIP -->
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info" style="margin-bottom: 2rem;">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                                <small style="color: var(--text-light);">Monday - Friday, 8am - 5pm</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-info" style="margin-bottom: 2rem;">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <p>
+                                    General: <a href="mailto:info@glacierservices.com">info@glacierservices.com</a><br>
+                                    Proposals: <a href="mailto:proposals@glacierservices.com">proposals@glacierservices.com</a><br>
+                                    Support: <a href="mailto:support@glacierservices.com">support@glacierservices.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr style="border: none; border-top: 1px solid var(--border-light); margin: 2rem 0;">
+
+                        <div style="background-color: var(--light-gray); padding: 1.5rem; border-radius: 8px;">
+                            <h4>Office Hours</h4>
+                            <p style="margin: 0.5rem 0;">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p style="margin: 0.5rem 0;">Saturday: By appointment</p>
+                            <p style="margin: 0.5rem 0;">Sunday: Closed</p>
+                            <small style="color: var(--text-light);">Emergency maintenance hotline available 24/7 for clients</small>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <hr style="border: none; border-top: 1px solid var(--border-light); margin: 2rem 0;">
+
+                        <h4>Quick Actions</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="request-proposal.html" class="btn btn-primary" style="display: block; text-align: center;">Request a Proposal</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="owner-portal.html" class="btn btn-outline" style="display: block; text-align: center;">Owner Portal Login</a>
+                            </li>
+                            <li>
+                                <a href="resident-portal.html" class="btn btn-outline" style="display: block; text-align: center;">Resident Portal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section with Map Placeholder -->
+        <section style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="text-center mb-3">Our Location</h2>
+                
+                <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #dbeafe, #e0f2fe); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🗺️</div>
+                        <p style="color: var(--text-light); font-size: 1rem;">Map placeholder - Embed your actual map here</p>
+                        <small style="color: var(--text-light);">Use Google Maps, Mapbox, or similar service</small>
+                    </div>
+                </div>
+
+                <p style="text-align: center; color: var(--text-light); max-width: 700px; margin: 0 auto;">
+                    Located in the heart of the region, we're conveniently accessible from throughout the surrounding communities. Street parking is available, and we're just blocks from public transportation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section>
+            <div class="container text-center">
+                <h2 class="mb-3">Connect With Us</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Follow us on social media for updates, community news, and property management tips.</p>
+                
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--primary-blue); color: white; border-radius: 50%; font-size: 1.5rem; text-decoration: none;">f</a>
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--primary-blue); color: white; border-radius: 50%; font-size: 1.5rem; text-decoration: none;">in</a>
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--primary-blue); color: white; border-radius: 50%; font-size: 1.5rem; text-decoration: none;">🐦</a>
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--primary-blue); color: white; border-radius: 50%; font-size: 1.5rem; text-decoration: none;">📷</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="text-center mb-3">Common Questions</h2>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">What's the best way to reach you if there's an emergency?</h4>
+                        <p>For maintenance emergencies after hours, call our emergency hotline at (555) 123-4567 Option 1. For other urgent issues, try our main number first, then email support@glacierservices.com.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">Can we schedule an in-person meeting?</h4>
+                        <p>Absolutely! We can typically accommodate meetings within 48 hours of your request. Call us or use the contact form to schedule an appointment at our office or your community.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">Do you offer phone consultations?</h4>
+                        <p>Yes! Many clients prefer phone or video consultations. Let us know your preference when you contact us and we'll arrange the most convenient option.</p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-blue);">How long does it usually take to hear back from you?</h4>
+                        <p>We aim to respond to all inquiries within 24 hours during business days. Urgent matters are typically handled within hours. For faster response, calling our office directly is best.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container-full">
+            <div class="footer-section">
+                <h4>Glacier Services</h4>
+                <p>Professional property management for residential communities.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    <strong>Address:</strong> 123 Main Street, Suite 100<br>
+                    <strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <strong>Email:</strong> <a href="mailto:info@glacierservices.com">info@glacierservices.com</a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Portals</h4>
+                <ul>
+                    <li><a href="owner-portal.html">Owner Portal</a></li>
+                    <li><a href="resident-portal.html">Resident Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Management Guides</a></li>
+                    <li><a href="#">Compliance Resources</a></li>
+                    <li><a href="#">Vendor Directory</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glacier Services. All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('contactSuccess').style.display = 'block';
+            document.getElementById('contactSuccess').scrollIntoView({ behavior: 'smooth' });
+            
+            // TODO: Configure your form submission method
+            // Option 1: Use Formspree (https://formspree.io/)
+            // Option 2: Use EmailJS (https://www.emailjs.com/)
+            // Option 3: Send to your backend API
+        });
+    </script>
+</body>
+</html>

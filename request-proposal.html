@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a free property management proposal from Glacier Services. Let's discuss your community's needs.">
+    <title>Request a Proposal - Glacier Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-placeholder">❄️</div>
+                <span>Glacier Services</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="owner-portal.html" class="nav-cta">Owner Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="background: linear-gradient(135deg, #1e40af 0%, #0d9488 100%); padding: 60px 2rem;">
+            <div class="hero-content">
+                <h1 style="color: white;">Request a Proposal</h1>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">Let's discuss how we can help manage your community</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section>
+            <div class="container">
+                <div class="two-column" style="grid-template-columns: 2fr 1fr;">
+                    <div>
+                        <h2>Tell Us About Your Community</h2>
+                        <p>Fill out the form below and we'll contact you within 24 hours to discuss your community's specific needs and how we can help.</p>
+
+                        <!-- Contact Form: IMPORTANT - Configure your form submission method -->
+                        <form id="proposalForm" style="margin: 2rem 0;">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="property-name">Property/Community Name *</label>
+                                <input type="text" id="property-name" name="property-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="property-type">Property Type *</label>
+                                <select id="property-type" name="property-type" required>
+                                    <option value="">-- Select Property Type --</option>
+                                    <option value="condo">Condominium</option>
+                                    <option value="hoa">HOA Community</option>
+                                    <option value="townhome">Townhome Community</option>
+                                    <option value="mixed">Mixed-Use Community</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="units">Number of Units *</label>
+                                <input type="number" id="units" name="units" min="1" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Description & Questions *</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your community, current management situation, and any specific concerns..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="documents">Upload Property Documents (Optional)</label>
+                                <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                                <small style="color: var(--text-light);">Accepted formats: PDF, Word, Excel. Max 10MB.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="services" style="margin-bottom: 1rem; display: block;">Interested Services (Check all that apply)</label>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="financial"> Financial Management
+                                    </label>
+                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="maintenance"> Maintenance Oversight
+                                    </label>
+                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="board-support"> Board Support
+                                    </label>
+                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="portals"> Online Portals
+                                    </label>
+                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
+                                        <input type="checkbox" name="services" value="full"> Full Property Management
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
+                                    <input type="checkbox" id="agree" name="agree" required>
+                                    <span>I agree to be contacted by Glacier Services about this proposal *</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Request Proposal</button>
+                        </form>
+
+                        <!-- SUCCESS MESSAGE: Hidden until form is submitted -->
+                        <div id="successMessage" style="display: none; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+                            <strong>Thank you!</strong> We've received your proposal request. Our team will contact you within 24 hours to discuss your community's needs.
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="background-color: var(--light-gray); padding: 2rem; border-radius: 8px; sticky; top: 100px;">
+                            <h3>Quick Contact Info</h3>
+                            <div class="contact-info" style="margin-bottom: 1.5rem;">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-info-text">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-info-text">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:proposals@glacierservices.com">proposals@glacierservices.com</a></p>
+                                </div>
+                            </div>
+
+                            <hr style="border: none; border-top: 1px solid var(--border-light); margin: 1.5rem 0;">
+
+                            <h4>Why Request a Proposal?</h4>
+                            <ul class="feature-list" style="margin-top: 1rem;">
+                                <li>Free, no-obligation consultation</li>
+                                <li>Customized service recommendations</li>
+                                <li>Transparent pricing</li>
+                                <li> 24-hour response guarantee</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="text-center mb-3">Frequently Asked Questions</h2>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">What's included in a proposal?</h4>
+                        <p>Our proposals include a detailed assessment of your community, recommended services, pricing, and timeline. We'll discuss each element during a consultation call.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">How long does the transition process take?</h4>
+                        <p>Most transitions are completed within 2-4 weeks, depending on your community's complexity. We'll provide a detailed timeline during your consultation.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">Can we do a partial transition?</h4>
+                        <p>Absolutely! Many of our clients start with select services and expand over time. We can customize any solution to meet your needs.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue);">What if we're currently under contract with another manager?</h4>
+                        <p>We understand that switching property managers involves contract considerations. Our team will work with you to ensure a smooth transition within your contractual timeline.</p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-blue);">Do you offer a free trial period?</h4>
+                        <p>Yes! We can often arrange a limited-term trial of specific services so you can experience our approach before committing to full management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section>
+            <div class="container">
+                <h2 class="text-center mb-3">Why Communities Trust Glacier Services</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">✓</div>
+                        <h3>15+ Years Experience</h3>
+                        <p>Managing 300+ properties and serving thousands of residents with proven results.</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">✓</div>
+                        <h3>Transparent Pricing</h3>
+                        <p>Clear, competitive fees with no hidden costs. You know exactly what you're paying.</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">✓</div>
+                        <h3>Local Experts</h3>
+                        <p>We know your region, your communities, and your challenges firsthand.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container-full">
+            <div class="footer-section">
+                <h4>Glacier Services</h4>
+                <p>Professional property management for residential communities.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    <strong>Address:</strong> 123 Main Street, Suite 100<br>
+                    <strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <strong>Email:</strong> <a href="mailto:info@glacierservices.com">info@glacierservices.com</a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Portals</h4>
+                <ul>
+                    <li><a href="owner-portal.html">Owner Portal</a></li>
+                    <li><a href="resident-portal.html">Resident Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Management Guides</a></li>
+                    <li><a href="#">Compliance Resources</a></li>
+                    <li><a href="#">Vendor Directory</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glacier Services. All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('proposalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // TODO: Replace with your actual form submission endpoint
+            // This could be an email service (Formspree, EmailJS, etc.) or your backend
+            const formData = new FormData(this);
+            
+            // Show success message
+            document.getElementById('proposalForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+            
+            // IMPORTANT: You'll need to configure form submission
+            // Option 1: Use Formspree (https://formspree.io/)
+            // Option 2: Use EmailJS (https://www.emailjs.com/)
+            // Option 3: Send to your backend API
+            // Example with Formspree:
+            // fetch('https://formspree.io/f/YOUR_FORM_ID', {
+            //     method: 'POST',
+            //     body: formData,
+            //     headers: { 'Accept': 'application/json' }
+            // });
+        });
+    </script>
+</body>
+</html>
