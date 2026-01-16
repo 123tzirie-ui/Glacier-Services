@@ -1,25 +1,25 @@
 /* 
  * Glacier Services - Professional Property Management Website
  * Color Scheme:
- * - Primary Blue: #1e40af (professional, trustworthy)
- * - Secondary Slate: #475569 (complementary neutral)
- * - Accent Teal: #0d9488 (modern, energetic)
- * - Light Gray: #f8fafc (clean backgrounds)
- * - Dark Gray: #1e293b (text/headings)
+ * - Primary Brown: #5a4a3a (warm, professional)
+ * - Secondary Silver: #a0a0a0 (modern, sophisticated)
+ * - Accent Copper: #c1815e (warm, elegant)
+ * - Light Silver: #f5f3f0 (clean backgrounds)
+ * - Dark Black: #2a2a2a (text/headings)
  */
 
 :root {
-  --primary-blue: #1e40af;
-  --primary-dark: #1e3a8a;
-  --secondary-slate: #475569;
-  --accent-teal: #0d9488;
-  --light-gray: #f8fafc;
-  --dark-gray: #1e293b;
-  --border-light: #e2e8f0;
+  --primary-blue: #5a4a3a;
+  --primary-dark: #3d332a;
+  --secondary-slate: #8a7a6a;
+  --accent-teal: #c1815e;
+  --light-gray: #f5f3f0;
+  --dark-gray: #2a2a2a;
+  --border-light: #e8e0d8;
   --success: #16a34a;
   --warning: #ea580c;
-  --text-dark: #1e293b;
-  --text-light: #64748b;
+  --text-dark: #2a2a2a;
+  --text-light: #6b6b6b;
   --spacing-unit: 1rem;
 }
 
@@ -113,7 +113,7 @@ header {
 .logo-placeholder {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+  background: linear-gradient(135deg, #5a4a3a, #c1815e);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -216,7 +216,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1e40af 0%, #0d9488 100%);
+  background: linear-gradient(135deg, #5a4a3a 0%, #c1815e 100%);
   color: white;
   padding: 100px 2rem;
   text-align: center;
@@ -420,7 +420,7 @@ textarea {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+  background: linear-gradient(135deg, #5a4a3a, #c1815e);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -635,7 +635,7 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+  background: linear-gradient(135deg, #5a4a3a, #c1815e);
   display: flex;
   align-items: center;
   justify-content: center;
