@@ -33,10 +33,10 @@
 
     <main id="main-content">
         <!-- Page Header -->
-        <section class="hero" style="background: linear-gradient(135deg, #1e40af 0%, #0d9488 100%); padding: 60px 2rem;">
+        <section class="hero" style="background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%); padding: 60px 2rem;">
             <div class="hero-content">
                 <h1 style="color: white;">Request a Proposal</h1>
-                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">Let's discuss how we can help manage your community</p>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">Tell us about your property, and we'll create a customized management proposal tailored to your goals.</p>
             </div>
         </section>
 
@@ -45,8 +45,8 @@
             <div class="container">
                 <div class="two-column" style="grid-template-columns: 2fr 1fr;">
                     <div>
-                        <h2>Tell Us About Your Community</h2>
-                        <p>Fill out the form below and we'll contact you within 24 hours to discuss your community's specific needs and how we can help.</p>
+                        <h2>Tell Us About Your Property</h2>
+                        <p>Fill out the form below and we'll contact you within 24 hours to discuss your property's specific needs and how we can help.</p>
 
                         <!-- Contact Form: IMPORTANT - Configure your form submission method -->
                         <form id="proposalForm" style="margin: 2rem 0;">
@@ -66,7 +66,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="property-name">Property/Community Name *</label>
+                                <label for="property-name">Property Address *</label>
                                 <input type="text" id="property-name" name="property-name" required>
                             </div>
 
@@ -74,10 +74,9 @@
                                 <label for="property-type">Property Type *</label>
                                 <select id="property-type" name="property-type" required>
                                     <option value="">-- Select Property Type --</option>
-                                    <option value="condo">Condominium</option>
-                                    <option value="hoa">HOA Community</option>
-                                    <option value="townhome">Townhome Community</option>
-                                    <option value="mixed">Mixed-Use Community</option>
+                                    <option value="single-family">Single Family</option>
+                                    <option value="multi-family">Multiple Family</option>
+                                    <option value="residential">Residential</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
@@ -89,34 +88,13 @@
 
                             <div class="form-group">
                                 <label for="message">Project Description & Questions *</label>
-                                <textarea id="message" name="message" placeholder="Tell us about your community, current management situation, and any specific concerns..." required></textarea>
+                                <textarea id="message" name="message" placeholder="Tell us about your property..." required></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label for="documents">Upload Property Documents (Optional)</label>
                                 <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx,.xls,.xlsx">
                                 <small style="color: var(--text-light);">Accepted formats: PDF, Word, Excel. Max 10MB.</small>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="services" style="margin-bottom: 1rem; display: block;">Interested Services (Check all that apply)</label>
-                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
-                                        <input type="checkbox" name="services" value="financial"> Financial Management
-                                    </label>
-                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
-                                        <input type="checkbox" name="services" value="maintenance"> Maintenance Oversight
-                                    </label>
-                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
-                                        <input type="checkbox" name="services" value="board-support"> Board Support
-                                    </label>
-                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
-                                        <input type="checkbox" name="services" value="portals"> Online Portals
-                                    </label>
-                                    <label style="display: flex; gap: 0.5rem; margin: 0; font-weight: normal;">
-                                        <input type="checkbox" name="services" value="full"> Full Property Management
-                                    </label>
-                                </div>
                             </div>
 
                             <div class="form-group">
@@ -164,40 +142,6 @@
                                 <li> 24-hour response guarantee</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section style="background-color: var(--light-gray);">
-            <div class="container">
-                <h2 class="text-center mb-3">Frequently Asked Questions</h2>
-
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--primary-blue);">What's included in a proposal?</h4>
-                        <p>Our proposals include a detailed assessment of your community, recommended services, pricing, and timeline. We'll discuss each element during a consultation call.</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--primary-blue);">How long does the transition process take?</h4>
-                        <p>Most transitions are completed within 2-4 weeks, depending on your community's complexity. We'll provide a detailed timeline during your consultation.</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--primary-blue);">Can we do a partial transition?</h4>
-                        <p>Absolutely! Many of our clients start with select services and expand over time. We can customize any solution to meet your needs.</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--primary-blue);">What if we're currently under contract with another manager?</h4>
-                        <p>We understand that switching property managers involves contract considerations. Our team will work with you to ensure a smooth transition within your contractual timeline.</p>
-                    </div>
-
-                    <div>
-                        <h4 style="color: var(--primary-blue);">Do you offer a free trial period?</h4>
-                        <p>Yes! We can often arrange a limited-term trial of specific services so you can experience our approach before committing to full management.</p>
                     </div>
                 </div>
             </div>
